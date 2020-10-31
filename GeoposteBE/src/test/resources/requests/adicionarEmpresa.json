@@ -1,0 +1,14 @@
+{
+  "ordenacao": "",
+  "razao_social": "",
+  "nome_fantasia": "",
+  "sigla": "",
+  "cnpj": "",
+  "numero_contrato": "",
+  "endereco": "",
+  "contrato": false,
+  "postes_contratados": "",
+  "grupo_id": "",
+  "grupo": {},
+  "contatos": []
+}
