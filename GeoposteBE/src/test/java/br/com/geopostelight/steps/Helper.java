@@ -46,8 +46,8 @@ public class Helper extends BaseTest {
         Map<String, String> params = new HashMap<String, String>();
         params.put("page", "1");
         params.put("per_page", "30");
-        params.put("direction", "asc");
-        params.put("column", "nome_fantasia");
+        params.put("direction", "desc");
+        params.put("column", "created_at");
         params.put("nome_fantasia", nomeFantasia);
 
         setRequestSpecification(getRequestSpecification().queryParams(params));
@@ -80,7 +80,7 @@ public class Helper extends BaseTest {
                 );
                 assertThat(
                         getValidatableResponse().extract().body().jsonPath().<String>get("params.direction")
-                        , is(equalTo("asc"))
+                        , is(equalTo("desc"))
                 );
                 break;
             case "atualizados":

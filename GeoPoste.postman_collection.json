@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "68fc36dc-50e4-4e2d-99c3-aa243ff9af97",
+		"name": "GeoPoste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "eyJpdiI6IkJ2aWFTQWtzTnN3OTBBWFhIdmU2cEE9PSIsInZhbHVlIjoiUEdXaE8rYXBaRjRaMk4zRUdNOUZTQmpCUGt1TDlpRlpkQUhLMVVXc3ZvV2JBb0pXYVpIQlZ5REIxbWRWQjJrMzJwZVdIVG9abnNvNmw0ZS85azBQeEtNTGxjQTY4elpEVmtRQTY1WEpXeFJSRHZneFpzRDN6dzIwMGhjL0IvenEiLCJtYWMiOiJlOGQxMThlMzA1ZTA3MmJjZGJkMjk4ZjcyMGZiOTI4Mjk2NzhjYjc1MDlmMGQ0NjlhZTEzNGQzZDc2Mzk4N2M2In0="
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTM1ZGUzOWMzMTgxODUyNDQyOGE5NDgyYjI5YTBlNmZjZTY0N2U4MDE3NzI3MTY5NWFmOGE0NDZkZDNkYzFlMTQ1OTBiYTFhNjBjNWZhMTkiLCJpYXQiOjE2MDQwOTE4MDMsIm5iZiI6MTYwNDA5MTgwMywiZXhwIjoxNjM1NjI3ODAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.G4QqFrViejtbDhsbbIpxW2wm22BpM5jlQnuYU7JciBS7IQ2EcTUGZsvDhFaA3As-mnAmMKpS3P-wFSTnye0Db5PlnwKnZUoGdt9Wht97dtgKQu7TX8pNNB2AUTsL66VSqKRD3q9UeKKh4kCVeOTqDsDg8YN1x_yUrFo-pIciXBTjMPLVT0tLpYvAOzIpp60QGqf0zjQ2exnY_zJoAa13msYPwVFc8hm9HgmsSxIflE0Jw3acsEnUOP4Yli85RtWA0wmOHHZ1m0Q1Nb-JMFLMOmBf-zHEK9vochGgpFQlvmv80b2bbT_FIkfU2QR9vHWEgv3HLZh9q-4RH5Ry4P0D8_MPeHrbcjXhLNeaR5TQo2JQgzgUv7a0W6sGLX3jHuWD5QX--AgIA5M_q68vS4oFuClf7_DYRDZO_7MXiCLX9xmA0F0RMO2pPhfQBCQI_HhR-Tjq5BQV0rfj5_YgEoglyNt1PzZNsU25mQ8AG5x6n6DKUo1TQ9KckbbDIvh0g0i147kcxe1GnJ3XFEzxW1_gNEf-EP4MDbfBPzhzB7IpxJ5jCWXg6ZXYiU72VZc2T9nAiJo2dZMshW7WZLYgkPSRR-y7Ghogg4IcBt3alpx1evP2uOowzyzdWlIpFyfBVC4yFvL71-Ho8ZNw9U_xdg_zOUFWC5gyRWEpNG4ehNoXUWs"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "https://adhomol01.geopostelight.com.br"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "https://adhomol01.geopostelight.com.br/empresas/create"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Cookie",
+						"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTM1ZGUzOWMzMTgxODUyNDQyOGE5NDgyYjI5YTBlNmZjZTY0N2U4MDE3NzI3MTY5NWFmOGE0NDZkZDNkYzFlMTQ1OTBiYTFhNjBjNWZhMTkiLCJpYXQiOjE2MDQwOTE4MDMsIm5iZiI6MTYwNDA5MTgwMywiZXhwIjoxNjM1NjI3ODAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.G4QqFrViejtbDhsbbIpxW2wm22BpM5jlQnuYU7JciBS7IQ2EcTUGZsvDhFaA3As-mnAmMKpS3P-wFSTnye0Db5PlnwKnZUoGdt9Wht97dtgKQu7TX8pNNB2AUTsL66VSqKRD3q9UeKKh4kCVeOTqDsDg8YN1x_yUrFo-pIciXBTjMPLVT0tLpYvAOzIpp60QGqf0zjQ2exnY_zJoAa13msYPwVFc8hm9HgmsSxIflE0Jw3acsEnUOP4Yli85RtWA0wmOHHZ1m0Q1Nb-JMFLMOmBf-zHEK9vochGgpFQlvmv80b2bbT_FIkfU2QR9vHWEgv3HLZh9q-4RH5Ry4P0D8_MPeHrbcjXhLNeaR5TQo2JQgzgUv7a0W6sGLX3jHuWD5QX--AgIA5M_q68vS4oFuClf7_DYRDZO_7MXiCLX9xmA0F0RMO2pPhfQBCQI_HhR-Tjq5BQV0rfj5_YgEoglyNt1PzZNsU25mQ8AG5x6n6DKUo1TQ9KckbbDIvh0g0i147kcxe1GnJ3XFEzxW1_gNEf-EP4MDbfBPzhzB7IpxJ5jCWXg6ZXYiU72VZc2T9nAiJo2dZMshW7WZLYgkPSRR-y7Ghogg4IcBt3alpx1evP2uOowzyzdWlIpFyfBVC4yFvL71-Ho8ZNw9U_xdg_zOUFWC5gyRWEpNG4ehNoXUWs; expiration=1604123339382; id=1; nome=Administrador%20Geral; email=geoposte%40cadic.com.br; acl=*; avatar=avatar_23.png; XSRF-TOKEN=eyJpdiI6IkJ2aWFTQWtzTnN3OTBBWFhIdmU2cEE9PSIsInZhbHVlIjoiUEdXaE8rYXBaRjRaMk4zRUdNOUZTQmpCUGt1TDlpRlpkQUhLMVVXc3ZvV2JBb0pXYVpIQlZ5REIxbWRWQjJrMzJwZVdIVG9abnNvNmw0ZS85azBQeEtNTGxjQTY4elpEVmtRQTY1WEpXeFJSRHZneFpzRDN6dzIwMGhjL0IvenEiLCJtYWMiOiJlOGQxMThlMzA1ZTA3MmJjZGJkMjk4ZjcyMGZiOTI4Mjk2NzhjYjc1MDlmMGQ0NjlhZTEzNGQzZDc2Mzk4N2M2In0%3D; laravel_session=eyJpdiI6ImNMbmNOaXNJeFh0RDFocTRXbzVrakE9PSIsInZhbHVlIjoidmVPdHZ6TDZPYmtTYk9Jd3ZmMjNVSU0yWlUrcjh1Mm1lUzByN3A5aE9kNVdYUXBPbm82LytFeVBybW04SzZxVi9lSmErL004d0NJMzI5VzVPblFHQWp4NDlaWVg4NjM4THlQMXcydjNGTlZmWS9YdGduc2w1ZEZBcEl5bXNzUXUiLCJtYWMiOiIzZjBlMDExMzU2NmJiNjcyMWU1NTdiNGNmYmJmZWNiMjdlZWE2NDBiNjYwMWZmNDBkNjdmNjI1ZjBmOWE5M2NiIn0%3D"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ordenacao\": \"564\",\n    \"razao_social\": \"\",\n    \"nome_fantasia\": \"GEOPOSTE_FANTASIA\",\n    \"sigla\": \"\",\n    \"cnpj\": \"\",\n    \"numero_contrato\": \"\",\n    \"endereco\": \"Rua do Freela, 41\",\n    \"contrato\": false,\n    \"postes_contratados\": \"\",\n    \"grupo_id\": \"\",\n    \"grupo\": {},\n    \"contatos\": []\n}"
+				},
+				"url": {
+					"raw": "https://adhomol01.geopostelight.com.br/api/empresas",
+					"protocol": "https",
+					"host": [
+						"adhomol01",
+						"geopostelight",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"empresas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Company By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "eyJpdiI6IkJ2aWFTQWtzTnN3OTBBWFhIdmU2cEE9PSIsInZhbHVlIjoiUEdXaE8rYXBaRjRaMk4zRUdNOUZTQmpCUGt1TDlpRlpkQUhLMVVXc3ZvV2JBb0pXYVpIQlZ5REIxbWRWQjJrMzJwZVdIVG9abnNvNmw0ZS85azBQeEtNTGxjQTY4elpEVmtRQTY1WEpXeFJSRHZneFpzRDN6dzIwMGhjL0IvenEiLCJtYWMiOiJlOGQxMThlMzA1ZTA3MmJjZGJkMjk4ZjcyMGZiOTI4Mjk2NzhjYjc1MDlmMGQ0NjlhZTEzNGQzZDc2Mzk4N2M2In0="
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTM1ZGUzOWMzMTgxODUyNDQyOGE5NDgyYjI5YTBlNmZjZTY0N2U4MDE3NzI3MTY5NWFmOGE0NDZkZDNkYzFlMTQ1OTBiYTFhNjBjNWZhMTkiLCJpYXQiOjE2MDQwOTE4MDMsIm5iZiI6MTYwNDA5MTgwMywiZXhwIjoxNjM1NjI3ODAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.G4QqFrViejtbDhsbbIpxW2wm22BpM5jlQnuYU7JciBS7IQ2EcTUGZsvDhFaA3As-mnAmMKpS3P-wFSTnye0Db5PlnwKnZUoGdt9Wht97dtgKQu7TX8pNNB2AUTsL66VSqKRD3q9UeKKh4kCVeOTqDsDg8YN1x_yUrFo-pIciXBTjMPLVT0tLpYvAOzIpp60QGqf0zjQ2exnY_zJoAa13msYPwVFc8hm9HgmsSxIflE0Jw3acsEnUOP4Yli85RtWA0wmOHHZ1m0Q1Nb-JMFLMOmBf-zHEK9vochGgpFQlvmv80b2bbT_FIkfU2QR9vHWEgv3HLZh9q-4RH5Ry4P0D8_MPeHrbcjXhLNeaR5TQo2JQgzgUv7a0W6sGLX3jHuWD5QX--AgIA5M_q68vS4oFuClf7_DYRDZO_7MXiCLX9xmA0F0RMO2pPhfQBCQI_HhR-Tjq5BQV0rfj5_YgEoglyNt1PzZNsU25mQ8AG5x6n6DKUo1TQ9KckbbDIvh0g0i147kcxe1GnJ3XFEzxW1_gNEf-EP4MDbfBPzhzB7IpxJ5jCWXg6ZXYiU72VZc2T9nAiJo2dZMshW7WZLYgkPSRR-y7Ghogg4IcBt3alpx1evP2uOowzyzdWlIpFyfBVC4yFvL71-Ho8ZNw9U_xdg_zOUFWC5gyRWEpNG4ehNoXUWs"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "https://adhomol01.geopostelight.com.br/empresas"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Cookie",
+						"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTM1ZGUzOWMzMTgxODUyNDQyOGE5NDgyYjI5YTBlNmZjZTY0N2U4MDE3NzI3MTY5NWFmOGE0NDZkZDNkYzFlMTQ1OTBiYTFhNjBjNWZhMTkiLCJpYXQiOjE2MDQwOTE4MDMsIm5iZiI6MTYwNDA5MTgwMywiZXhwIjoxNjM1NjI3ODAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.G4QqFrViejtbDhsbbIpxW2wm22BpM5jlQnuYU7JciBS7IQ2EcTUGZsvDhFaA3As-mnAmMKpS3P-wFSTnye0Db5PlnwKnZUoGdt9Wht97dtgKQu7TX8pNNB2AUTsL66VSqKRD3q9UeKKh4kCVeOTqDsDg8YN1x_yUrFo-pIciXBTjMPLVT0tLpYvAOzIpp60QGqf0zjQ2exnY_zJoAa13msYPwVFc8hm9HgmsSxIflE0Jw3acsEnUOP4Yli85RtWA0wmOHHZ1m0Q1Nb-JMFLMOmBf-zHEK9vochGgpFQlvmv80b2bbT_FIkfU2QR9vHWEgv3HLZh9q-4RH5Ry4P0D8_MPeHrbcjXhLNeaR5TQo2JQgzgUv7a0W6sGLX3jHuWD5QX--AgIA5M_q68vS4oFuClf7_DYRDZO_7MXiCLX9xmA0F0RMO2pPhfQBCQI_HhR-Tjq5BQV0rfj5_YgEoglyNt1PzZNsU25mQ8AG5x6n6DKUo1TQ9KckbbDIvh0g0i147kcxe1GnJ3XFEzxW1_gNEf-EP4MDbfBPzhzB7IpxJ5jCWXg6ZXYiU72VZc2T9nAiJo2dZMshW7WZLYgkPSRR-y7Ghogg4IcBt3alpx1evP2uOowzyzdWlIpFyfBVC4yFvL71-Ho8ZNw9U_xdg_zOUFWC5gyRWEpNG4ehNoXUWs; expiration=1604123339382; id=1; nome=Administrador%20Geral; email=geoposte%40cadic.com.br; acl=*; avatar=avatar_23.png; XSRF-TOKEN=eyJpdiI6IkJ2aWFTQWtzTnN3OTBBWFhIdmU2cEE9PSIsInZhbHVlIjoiUEdXaE8rYXBaRjRaMk4zRUdNOUZTQmpCUGt1TDlpRlpkQUhLMVVXc3ZvV2JBb0pXYVpIQlZ5REIxbWRWQjJrMzJwZVdIVG9abnNvNmw0ZS85azBQeEtNTGxjQTY4elpEVmtRQTY1WEpXeFJSRHZneFpzRDN6dzIwMGhjL0IvenEiLCJtYWMiOiJlOGQxMThlMzA1ZTA3MmJjZGJkMjk4ZjcyMGZiOTI4Mjk2NzhjYjc1MDlmMGQ0NjlhZTEzNGQzZDc2Mzk4N2M2In0%3D; laravel_session=eyJpdiI6ImNMbmNOaXNJeFh0RDFocTRXbzVrakE9PSIsInZhbHVlIjoidmVPdHZ6TDZPYmtTYk9Jd3ZmMjNVSU0yWlUrcjh1Mm1lUzByN3A5aE9kNVdYUXBPbm82LytFeVBybW04SzZxVi9lSmErL004d0NJMzI5VzVPblFHQWp4NDlaWVg4NjM4THlQMXcydjNGTlZmWS9YdGduc2w1ZEZBcEl5bXNzUXUiLCJtYWMiOiIzZjBlMDExMzU2NmJiNjcyMWU1NTdiNGNmYmJmZWNiMjdlZWE2NDBiNjYwMWZmNDBkNjdmNjI1ZjBmOWE5M2NiIn0%3D"
+					}
+				],
+				"url": {
+					"raw": "https://adhomol01.geopostelight.com.br/api/empresas?page=1&per_page=30&direction=desc&column=created_at&nome_fantasia=GEOPOSTE_FANTASIA",
+					"protocol": "https",
+					"host": [
+						"adhomol01",
+						"geopostelight",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"empresas"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "30"
+						},
+						{
+							"key": "direction",
+							"value": "desc"
+						},
+						{
+							"key": "column",
+							"value": "created_at"
+						},
+						{
+							"key": "nome_fantasia",
+							"value": "GEOPOSTE_FANTASIA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT company",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "eyJpdiI6IkJ2aWFTQWtzTnN3OTBBWFhIdmU2cEE9PSIsInZhbHVlIjoiUEdXaE8rYXBaRjRaMk4zRUdNOUZTQmpCUGt1TDlpRlpkQUhLMVVXc3ZvV2JBb0pXYVpIQlZ5REIxbWRWQjJrMzJwZVdIVG9abnNvNmw0ZS85azBQeEtNTGxjQTY4elpEVmtRQTY1WEpXeFJSRHZneFpzRDN6dzIwMGhjL0IvenEiLCJtYWMiOiJlOGQxMThlMzA1ZTA3MmJjZGJkMjk4ZjcyMGZiOTI4Mjk2NzhjYjc1MDlmMGQ0NjlhZTEzNGQzZDc2Mzk4N2M2In0="
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTM1ZGUzOWMzMTgxODUyNDQyOGE5NDgyYjI5YTBlNmZjZTY0N2U4MDE3NzI3MTY5NWFmOGE0NDZkZDNkYzFlMTQ1OTBiYTFhNjBjNWZhMTkiLCJpYXQiOjE2MDQwOTE4MDMsIm5iZiI6MTYwNDA5MTgwMywiZXhwIjoxNjM1NjI3ODAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.G4QqFrViejtbDhsbbIpxW2wm22BpM5jlQnuYU7JciBS7IQ2EcTUGZsvDhFaA3As-mnAmMKpS3P-wFSTnye0Db5PlnwKnZUoGdt9Wht97dtgKQu7TX8pNNB2AUTsL66VSqKRD3q9UeKKh4kCVeOTqDsDg8YN1x_yUrFo-pIciXBTjMPLVT0tLpYvAOzIpp60QGqf0zjQ2exnY_zJoAa13msYPwVFc8hm9HgmsSxIflE0Jw3acsEnUOP4Yli85RtWA0wmOHHZ1m0Q1Nb-JMFLMOmBf-zHEK9vochGgpFQlvmv80b2bbT_FIkfU2QR9vHWEgv3HLZh9q-4RH5Ry4P0D8_MPeHrbcjXhLNeaR5TQo2JQgzgUv7a0W6sGLX3jHuWD5QX--AgIA5M_q68vS4oFuClf7_DYRDZO_7MXiCLX9xmA0F0RMO2pPhfQBCQI_HhR-Tjq5BQV0rfj5_YgEoglyNt1PzZNsU25mQ8AG5x6n6DKUo1TQ9KckbbDIvh0g0i147kcxe1GnJ3XFEzxW1_gNEf-EP4MDbfBPzhzB7IpxJ5jCWXg6ZXYiU72VZc2T9nAiJo2dZMshW7WZLYgkPSRR-y7Ghogg4IcBt3alpx1evP2uOowzyzdWlIpFyfBVC4yFvL71-Ho8ZNw9U_xdg_zOUFWC5gyRWEpNG4ehNoXUWs"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "https://adhomol01.geopostelight.com.br"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "https://adhomol01.geopostelight.com.br/empresas/12/edit"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Cookie",
+						"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTM1ZGUzOWMzMTgxODUyNDQyOGE5NDgyYjI5YTBlNmZjZTY0N2U4MDE3NzI3MTY5NWFmOGE0NDZkZDNkYzFlMTQ1OTBiYTFhNjBjNWZhMTkiLCJpYXQiOjE2MDQwOTE4MDMsIm5iZiI6MTYwNDA5MTgwMywiZXhwIjoxNjM1NjI3ODAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.G4QqFrViejtbDhsbbIpxW2wm22BpM5jlQnuYU7JciBS7IQ2EcTUGZsvDhFaA3As-mnAmMKpS3P-wFSTnye0Db5PlnwKnZUoGdt9Wht97dtgKQu7TX8pNNB2AUTsL66VSqKRD3q9UeKKh4kCVeOTqDsDg8YN1x_yUrFo-pIciXBTjMPLVT0tLpYvAOzIpp60QGqf0zjQ2exnY_zJoAa13msYPwVFc8hm9HgmsSxIflE0Jw3acsEnUOP4Yli85RtWA0wmOHHZ1m0Q1Nb-JMFLMOmBf-zHEK9vochGgpFQlvmv80b2bbT_FIkfU2QR9vHWEgv3HLZh9q-4RH5Ry4P0D8_MPeHrbcjXhLNeaR5TQo2JQgzgUv7a0W6sGLX3jHuWD5QX--AgIA5M_q68vS4oFuClf7_DYRDZO_7MXiCLX9xmA0F0RMO2pPhfQBCQI_HhR-Tjq5BQV0rfj5_YgEoglyNt1PzZNsU25mQ8AG5x6n6DKUo1TQ9KckbbDIvh0g0i147kcxe1GnJ3XFEzxW1_gNEf-EP4MDbfBPzhzB7IpxJ5jCWXg6ZXYiU72VZc2T9nAiJo2dZMshW7WZLYgkPSRR-y7Ghogg4IcBt3alpx1evP2uOowzyzdWlIpFyfBVC4yFvL71-Ho8ZNw9U_xdg_zOUFWC5gyRWEpNG4ehNoXUWs; expiration=1604123339382; id=1; nome=Administrador%20Geral; email=geoposte%40cadic.com.br; acl=*; avatar=avatar_23.png; XSRF-TOKEN=eyJpdiI6IkJ2aWFTQWtzTnN3OTBBWFhIdmU2cEE9PSIsInZhbHVlIjoiUEdXaE8rYXBaRjRaMk4zRUdNOUZTQmpCUGt1TDlpRlpkQUhLMVVXc3ZvV2JBb0pXYVpIQlZ5REIxbWRWQjJrMzJwZVdIVG9abnNvNmw0ZS85azBQeEtNTGxjQTY4elpEVmtRQTY1WEpXeFJSRHZneFpzRDN6dzIwMGhjL0IvenEiLCJtYWMiOiJlOGQxMThlMzA1ZTA3MmJjZGJkMjk4ZjcyMGZiOTI4Mjk2NzhjYjc1MDlmMGQ0NjlhZTEzNGQzZDc2Mzk4N2M2In0%3D; laravel_session=eyJpdiI6ImNMbmNOaXNJeFh0RDFocTRXbzVrakE9PSIsInZhbHVlIjoidmVPdHZ6TDZPYmtTYk9Jd3ZmMjNVSU0yWlUrcjh1Mm1lUzByN3A5aE9kNVdYUXBPbm82LytFeVBybW04SzZxVi9lSmErL004d0NJMzI5VzVPblFHQWp4NDlaWVg4NjM4THlQMXcydjNGTlZmWS9YdGduc2w1ZEZBcEl5bXNzUXUiLCJtYWMiOiIzZjBlMDExMzU2NmJiNjcyMWU1NTdiNGNmYmJmZWNiMjdlZWE2NDBiNjYwMWZmNDBkNjdmNjI1ZjBmOWE5M2NiIn0%3D"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 12,\n    \"ordenacao\": 564,\n    \"razao_social\": null,\n    \"nome_fantasia\": \"CLEIDE_UPDATED2\",\n    \"sigla\": null,\n    \"cnpj\": null,\n    \"numero_contrato\": null,\n    \"endereco\": \"dasdsadas\",\n    \"contrato\": false,\n    \"postes_contratados\": null,\n    \"grupo_id\": null,\n    \"created_at\": \"30/10/2020 - 19:20:40\",\n    \"updated_at\": \"30/10/2020 - 19:20:40\",\n    \"grupo\": null,\n    \"contatos\": []\n}"
+				},
+				"url": {
+					"raw": "https://adhomol01.geopostelight.com.br/api/empresas/12",
+					"protocol": "https",
+					"host": [
+						"adhomol01",
+						"geopostelight",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"empresas",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Company",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "eyJpdiI6IkJ2aWFTQWtzTnN3OTBBWFhIdmU2cEE9PSIsInZhbHVlIjoiUEdXaE8rYXBaRjRaMk4zRUdNOUZTQmpCUGt1TDlpRlpkQUhLMVVXc3ZvV2JBb0pXYVpIQlZ5REIxbWRWQjJrMzJwZVdIVG9abnNvNmw0ZS85azBQeEtNTGxjQTY4elpEVmtRQTY1WEpXeFJSRHZneFpzRDN6dzIwMGhjL0IvenEiLCJtYWMiOiJlOGQxMThlMzA1ZTA3MmJjZGJkMjk4ZjcyMGZiOTI4Mjk2NzhjYjc1MDlmMGQ0NjlhZTEzNGQzZDc2Mzk4N2M2In0="
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTM1ZGUzOWMzMTgxODUyNDQyOGE5NDgyYjI5YTBlNmZjZTY0N2U4MDE3NzI3MTY5NWFmOGE0NDZkZDNkYzFlMTQ1OTBiYTFhNjBjNWZhMTkiLCJpYXQiOjE2MDQwOTE4MDMsIm5iZiI6MTYwNDA5MTgwMywiZXhwIjoxNjM1NjI3ODAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.G4QqFrViejtbDhsbbIpxW2wm22BpM5jlQnuYU7JciBS7IQ2EcTUGZsvDhFaA3As-mnAmMKpS3P-wFSTnye0Db5PlnwKnZUoGdt9Wht97dtgKQu7TX8pNNB2AUTsL66VSqKRD3q9UeKKh4kCVeOTqDsDg8YN1x_yUrFo-pIciXBTjMPLVT0tLpYvAOzIpp60QGqf0zjQ2exnY_zJoAa13msYPwVFc8hm9HgmsSxIflE0Jw3acsEnUOP4Yli85RtWA0wmOHHZ1m0Q1Nb-JMFLMOmBf-zHEK9vochGgpFQlvmv80b2bbT_FIkfU2QR9vHWEgv3HLZh9q-4RH5Ry4P0D8_MPeHrbcjXhLNeaR5TQo2JQgzgUv7a0W6sGLX3jHuWD5QX--AgIA5M_q68vS4oFuClf7_DYRDZO_7MXiCLX9xmA0F0RMO2pPhfQBCQI_HhR-Tjq5BQV0rfj5_YgEoglyNt1PzZNsU25mQ8AG5x6n6DKUo1TQ9KckbbDIvh0g0i147kcxe1GnJ3XFEzxW1_gNEf-EP4MDbfBPzhzB7IpxJ5jCWXg6ZXYiU72VZc2T9nAiJo2dZMshW7WZLYgkPSRR-y7Ghogg4IcBt3alpx1evP2uOowzyzdWlIpFyfBVC4yFvL71-Ho8ZNw9U_xdg_zOUFWC5gyRWEpNG4ehNoXUWs"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
+					},
+					{
+						"key": "Origin",
+						"value": "https://adhomol01.geopostelight.com.br"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "https://adhomol01.geopostelight.com.br/empresas"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Cookie",
+						"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTM1ZGUzOWMzMTgxODUyNDQyOGE5NDgyYjI5YTBlNmZjZTY0N2U4MDE3NzI3MTY5NWFmOGE0NDZkZDNkYzFlMTQ1OTBiYTFhNjBjNWZhMTkiLCJpYXQiOjE2MDQwOTE4MDMsIm5iZiI6MTYwNDA5MTgwMywiZXhwIjoxNjM1NjI3ODAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.G4QqFrViejtbDhsbbIpxW2wm22BpM5jlQnuYU7JciBS7IQ2EcTUGZsvDhFaA3As-mnAmMKpS3P-wFSTnye0Db5PlnwKnZUoGdt9Wht97dtgKQu7TX8pNNB2AUTsL66VSqKRD3q9UeKKh4kCVeOTqDsDg8YN1x_yUrFo-pIciXBTjMPLVT0tLpYvAOzIpp60QGqf0zjQ2exnY_zJoAa13msYPwVFc8hm9HgmsSxIflE0Jw3acsEnUOP4Yli85RtWA0wmOHHZ1m0Q1Nb-JMFLMOmBf-zHEK9vochGgpFQlvmv80b2bbT_FIkfU2QR9vHWEgv3HLZh9q-4RH5Ry4P0D8_MPeHrbcjXhLNeaR5TQo2JQgzgUv7a0W6sGLX3jHuWD5QX--AgIA5M_q68vS4oFuClf7_DYRDZO_7MXiCLX9xmA0F0RMO2pPhfQBCQI_HhR-Tjq5BQV0rfj5_YgEoglyNt1PzZNsU25mQ8AG5x6n6DKUo1TQ9KckbbDIvh0g0i147kcxe1GnJ3XFEzxW1_gNEf-EP4MDbfBPzhzB7IpxJ5jCWXg6ZXYiU72VZc2T9nAiJo2dZMshW7WZLYgkPSRR-y7Ghogg4IcBt3alpx1evP2uOowzyzdWlIpFyfBVC4yFvL71-Ho8ZNw9U_xdg_zOUFWC5gyRWEpNG4ehNoXUWs; expiration=1604123339382; id=1; nome=Administrador%20Geral; email=geoposte%40cadic.com.br; acl=*; avatar=avatar_23.png; XSRF-TOKEN=eyJpdiI6IkJ2aWFTQWtzTnN3OTBBWFhIdmU2cEE9PSIsInZhbHVlIjoiUEdXaE8rYXBaRjRaMk4zRUdNOUZTQmpCUGt1TDlpRlpkQUhLMVVXc3ZvV2JBb0pXYVpIQlZ5REIxbWRWQjJrMzJwZVdIVG9abnNvNmw0ZS85azBQeEtNTGxjQTY4elpEVmtRQTY1WEpXeFJSRHZneFpzRDN6dzIwMGhjL0IvenEiLCJtYWMiOiJlOGQxMThlMzA1ZTA3MmJjZGJkMjk4ZjcyMGZiOTI4Mjk2NzhjYjc1MDlmMGQ0NjlhZTEzNGQzZDc2Mzk4N2M2In0%3D; laravel_session=eyJpdiI6ImNMbmNOaXNJeFh0RDFocTRXbzVrakE9PSIsInZhbHVlIjoidmVPdHZ6TDZPYmtTYk9Jd3ZmMjNVSU0yWlUrcjh1Mm1lUzByN3A5aE9kNVdYUXBPbm82LytFeVBybW04SzZxVi9lSmErL004d0NJMzI5VzVPblFHQWp4NDlaWVg4NjM4THlQMXcydjNGTlZmWS9YdGduc2w1ZEZBcEl5bXNzUXUiLCJtYWMiOiIzZjBlMDExMzU2NmJiNjcyMWU1NTdiNGNmYmJmZWNiMjdlZWE2NDBiNjYwMWZmNDBkNjdmNjI1ZjBmOWE5M2NiIn0%3D"
+					}
+				],
+				"url": {
+					"raw": "https://adhomol01.geopostelight.com.br/api/empresas/12",
+					"protocol": "https",
+					"host": [
+						"adhomol01",
+						"geopostelight",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"empresas",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
